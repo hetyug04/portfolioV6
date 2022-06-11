@@ -90,7 +90,7 @@ body{
 }
 .intro{
     padding-top: 7rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-size: clamp(40px, 3vw, 50px);
     font-weight: 500;
     color: #202769;
