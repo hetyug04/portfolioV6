@@ -1,0 +1,268 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+.blue{
+    color: #202769;
+}
+.orange{
+    color: #d38200;
+}
+body{
+    background-color: rgb(244, 241, 222) !important;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+.arrow {
+    text-align: center;
+    margin: 8% 0;
+    margin-top: 10vw;
+    color: #d38200;
+  }
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+.signature{
+    width: clamp(150px,11vw, 250px);
+    height: clamp(150px, 11vw, 250px);
+    margin-left: 60px;
+    padding-bottom: 40px;
+    margin-top: -2vw;
+}
+.nav{
+    margin-top: 2.15rem;
+    float:right;
+    list-style: none;
+    margin-right: 4rem;
+}
+.nav li{
+    margin: 0 1.25vw;
+    display: inline-block;
+    color: #202769;
+    font-size: 20px;
+}
+.introWrapper{
+    width: 70%;
+    min-height: 85vh;
+    margin: 0 auto;
+}
+.aboutWrapper{
+    width: 70%;
+    margin: 0 auto 3em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.skillsWrapper{
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contactWrapper{
+    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+    background-color: rgb(216, 213, 194);
+}
+.contactBanner{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.intro{
+    padding-top: 7rem;
+    font-size: clamp(40px, 3vw, 50px);
+    font-weight: 500;
+    color: #202769;
+}
+.about{
+    font-size: clamp(40px, 3vw, 50px);
+    font-weight: 500;
+    color: #202769;
+    margin: 0 auto;
+}
+.skills{
+    font-size: clamp(40px, 3vw, 50px);
+    font-weight: 500;
+    color: #202769;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+}
+.desc{
+    font-size: clamp(20px, 1.5vw, 45px);
+    margin-top: 2rem;
+    font-weight: 500;
+}
+.prjContainer{
+    margin-top: 2em;
+    display: flex;
+    height: 23vw;
+    width: 90%;
+    flex-direction: row;
+    align-content: space-between;
+}
+.img{
+    min-width: 12rem;
+    min-height: 5rem;
+}
+.pT{
+    font-size: clamp(25px, 1.75vw, 45px);
+    font-weight: 500;
+    color: #202769;
+    margin-bottom: 1vw;
+}
+.pDesc{
+    width: 40%;
+    margin-left: 2em;
+}
+#icon{
+    margin-top: .5em;
+    font-size: 2rem;
+}
+.grid{
+    display: grid;
+}
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color:#d38200;
+}
+a:active{
+    color:black;
+    text-decoration: none;
+}
+a:link{
+    text-decoration: none;
+}
+.contact{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: clamp(20px, 1.25vw, 45px);
+    font-weight: 700;
+    width: 30%;
+}
+.cInfo{
+    font-size: clamp(15px, .85vw, 45px);
+    font-weight: 400;
+}
+.resume{
+    margin-top: 2rem;
+    float: right;
+}
+.contactBanner a:link{
+    color: black;
+}
+.contactBanner a:hover{
+    color:#d38200;   
+}
+.hLinks{
+    margin-bottom: .5rem;
+    font-size: clamp(20px, 1.25vw, 45px);
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes fadeOut{
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+#backToTop{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, .4);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top:33rem;
+    position: fixed;
+    border: none;
+}
+.backToTopEntrance{
+    animation: fadeIn .5s ease-in;
+    animation-fill-mode: forwards;
+}
+.backToTopExit{
+    animation: fadeOut .5s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 600px){
+    .nav li{
+        display: flex;
+        line-height: 2rem;
+    }
+}
+@media screen and (max-width: 1000px){
+    .prjContainer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 0 auto;
+    }
+    .img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .pDesc{
+        margin-top: 1rem;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .pT{
+        margin: 0 auto;
+    }
+    .pD{
+        position:relative;
+        width: 100%;
+        
+    }
+    .links{
+        margin-top:0;
+    }
+}
+@media screen and (max-width: 600px){
+    .contact{
+        width: 100%;
+        text-align: center;
+    }
+    .resume{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .contactBanner{
+        flex-direction: column;
+    }
+}
+

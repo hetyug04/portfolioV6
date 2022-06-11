@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/73414ee9c2.js" crossorigin="anonymous"></script>
+    <title>Het Patel</title>
+</head>
+<nav>
+    <img  class="signature" src="images/webBack.png">
+    <ul class="nav">
+        <a id="nav" href="#about"><li>About</li></a>
+        <a id="nav" href="#skills"><li>Projects</li></a>
+        <a id="nav" href="#contact"><li>Contact</li></a>
+    </ul>
+</nav>
+<body>
+    <button onclick="topFunction()"id="backToTop"><i class="fa-solid fa-angles-up" style="font-size: 1.5em"></i></button>
+    <div class="introWrapper">
+        <h1 class="intro">Hi, Im Het</br>
+            I <span class="auto-type orange"></span>for fun
+        </h1>
+        <p class="desc">Im an aspiring software engineer, currently studying Computer Science at Binghamton University. I figured I needed a website to show off
+            my stuff, feel free to look around!</p>
+            <div class="arrow bounce">
+                <span class="material-symbols-outlined" style="font-size: 2.5em;">
+                     south
+                 </span>
+             </div>
+    </div>
+    <div class="aboutWrapper">
+        <a id="about"></a>
+        <h1 class="about">About</h1>
+        <p class="desc"> First off, im a huge nerd. I love watching horror, sci-fi, playing video games, working out, and eating hot cheetos.
+            But, more than anything, I love coding. Whether that be making websites like this one, video games, or impractical applications ill never actually use, its by far my favorite passtime. 
+            Its something I look forward to doing for a living in the future. Currently, I am enrolled in the Thomas J. Watt School of Engineering at Binghamton University
+            and will graduate with a BS in Computer Science in 2026. I anticipate diving straight into the tech industry after graduation as a software engineer for a top company.
+            <br><br><br><br>pssst...blog coming soon...</p>
+    </div>
+    <div class="skillsWrapper">
+        <a id="skills"></a>
+        <h1 class="skills">Projects</h1>
+        <grid class="grid">
+            <div class="prjContainer">
+            <img class="img" src="images/calculator.png"></img><h1 class="links"></h1>
+            <div class="pDesc">
+             <p class="pT"> JavaScript calculator</p>
+             <p class="pD"> I made a simple calculator using JavaScript, HTML, and CSS. Its functionaily includes basic mathematical operations and sumations.
+                I used this opportunity to practice intermediate to advance JavaScript functionality and logic.</p>
+                <h1 class="links">
+                    <a target="_blank" href="https://github.com/hetyug04/JSCalc"><i id="icon" class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://hetyug04.github.io/JSCalc/Calculator/index.html"><i  id="icon" class="fa-solid fa-link"></i></a>
+                </h1>
+             </div>
+            </div>
+        </grid>   
+    </div>
+    <section class="contactWrapper">
+        <a id="contact"></a>
+        <div class="contactBanner">
+            <section class="contact">Contact Me!
+            <p class="cInfo">
+                Het Patel<br>
+                hetyug04@gmail.com<br>
+                (929)-253-4130<br>
+                Forest Hills, New York, US
+            </p>
+            </section>
+            <div class="resume">
+                <h1 class="hLinks">Helpful Links</h1>
+                <a href="images/CS Resume.pdf" download>Resume</a><br>
+                <a href="https://github.com/hetyug04" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+    </div>
+        <div class="history"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                <script>
+                    var typed = new Typed(".auto-type", {
+                        strings: ["Code", "Design", "Sleep"],
+                        typeSpeed: 150,
+                        backSpeed: 150,
+                        loop: true
+                    })
+                </script>
+                <script src="interact.js"></script>
+</body>
+</html>
