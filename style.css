@@ -1,4 +1,3 @@
-
 html{
     scroll-behavior: smooth;
 }
@@ -270,4 +269,35 @@ a:link{
     .contactBanner{
         flex-direction: column;
     }
+}
+.languageWrapper{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+.langTitle{
+    margin: 0 auto;
+    font-size: clamp(40px, 3vw, 50px);
+    font-weight: 500;
+}
+.sectWrapper{
+    margin: 2rem auto 0;
+    height: 10rem;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.lang{
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2rem;
+}
+ul{
+    list-style: none;
+}
+i{
+    font-size: 2rem;
 }
