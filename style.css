@@ -216,7 +216,37 @@ a:link{
     animation: fadeOut .5s ease-in;
     animation-fill-mode: forwards;
 }
-
+.languageWrapper{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+.langTitle{
+    margin: 0 auto;
+    font-size: clamp(40px, 3vw, 50px);
+    font-weight: 500;
+}
+.sectWrapper{
+    margin: 2rem auto 0;
+    height: 10rem;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.lang{
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2rem;
+}
+ul{
+    list-style: none;
+}
+i{
+    font-size: 2rem;
+}
 @media screen and (max-width: 600px){
     .nav li{
         display: flex;
@@ -256,6 +286,17 @@ a:link{
     .links{
         margin-top:0;
     }
+    .sectWrapper{
+        flex-direction: column;
+        height: auto;
+    }
+    .lang{
+        margin-bottom: 1.5rem;
+    }
+    .languageWrapper{
+        height: auto;
+        margin-bottom: 2rem;
+    }
 }
 @media screen and (max-width: 600px){
     .contact{
@@ -269,35 +310,4 @@ a:link{
     .contactBanner{
         flex-direction: column;
     }
-}
-.languageWrapper{
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-}
-.langTitle{
-    margin: 0 auto;
-    font-size: clamp(40px, 3vw, 50px);
-    font-weight: 500;
-}
-.sectWrapper{
-    margin: 2rem auto 0;
-    height: 10rem;
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.lang{
-    font-size: 1.25rem;
-    font-weight: 600;
-    text-align: center;
-    line-height: 2rem;
-}
-ul{
-    list-style: none;
-}
-i{
-    font-size: 2rem;
 }
